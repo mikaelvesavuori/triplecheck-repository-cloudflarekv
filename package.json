@@ -1,7 +1,7 @@
 {
   "name": "triplecheck-repository-cloudflarekv",
   "version": "0.0.1",
-  "description": "Database utility for using Cloudflare KV with Triplecheck broker.",
+  "description": "Database utility for using Cloudflare KV with TripleCheck broker.",
   "main": "build/index.js",
   "keywords": [
     "triplecheck",

@@ -2,7 +2,7 @@
 
 ## TripleCheck: Cloudflare KV database repository
 
-Database utility for using Cloudflare KV with Triplecheck broker. It implements the repository base at [triplecheck-core](https://github.com/mikaelvesavuori/triplecheck-core).
+Database utility for using Cloudflare KV with TripleCheck broker. It implements the repository base at [triplecheck-core](https://github.com/mikaelvesavuori/triplecheck-core).
 
 ## Instructions
 

@@ -4,7 +4,7 @@ import { Repository, List } from 'triplecheck-core';
 
 /**
  * @description The CloudflareKvRepository allows us to run basic database operations on Cloudflare KV.
- * The business logic itself is encapsulated in the Triplecheck broker.
+ * The business logic itself is encapsulated in the TripleCheck broker.
  * Notice how we are using `TRIPLECHECK` as the namespace.
  */
 export class CloudflareKvRepository implements Repository {
