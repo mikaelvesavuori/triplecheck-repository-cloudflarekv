@@ -6,7 +6,7 @@ Database utility for using Cloudflare KV with TripleCheck broker. It implements 
 
 ## Instructions
 
-In your `triplecheck-broker` implementation, do a regular import for `triplecheck-repository-cloudflarekv` and pass the repository to the broker. In a Cloudflare Workers context, and implementation could look like:
+In your `triplecheck-broker` implementation, do a regular import for `triplecheck-repository-cloudflarekv` and pass the repository to the broker. In a Cloudflare Workers context, an implementation could look like:
 
 ```TypeScript
 import { CloudflareKvRepository } from 'triplecheck-repository-cloudflarekv';
@@ -32,11 +32,8 @@ async function handler(req: any) {
     repository
   );
 
-  // Handle CORS if you need
+  // Handle for example CORS if you need
   const headers = new Headers();
-  headers.set('Access-Control-Allow-Origin', '*');
-  headers.set('Access-Control-Allow-Methods', 'GET,POST,PUT,DELETE,OPTIONS');
-  headers.set('Access-Control-Allow-Headers', '*');
 
   return new Response(JSON.stringify(responseData), { status, headers });
 }
