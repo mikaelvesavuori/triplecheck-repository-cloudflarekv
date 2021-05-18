@@ -1,10 +1,12 @@
 # triplecheck-repository-cloudflarekv
 
+![TripleCheck database repository](readme/triplecheck-repository.png)
+
 ## TripleCheck: Cloudflare KV database repository
 
 Database utility for using Cloudflare KV with TripleCheck broker. It implements the repository base at [triplecheck-core](https://github.com/mikaelvesavuori/triplecheck-core).
 
-## Instructions
+## Basic implementation
 
 In your `triplecheck-broker` implementation, do a regular import for `triplecheck-repository-cloudflarekv` and pass the repository to the broker. In a Cloudflare Workers context, an implementation could look like:
 
@@ -31,9 +33,6 @@ async function handler(req: any) {
     payload,
     repository
   );
-
-  // Handle for example CORS if you need
-  const headers = new Headers();
 
   return new Response(JSON.stringify(responseData), { status, headers });
 }

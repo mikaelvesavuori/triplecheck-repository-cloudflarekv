@@ -5,6 +5,9 @@
   "main": "build/index.js",
   "keywords": [
     "triplecheck",
+    "triplecheck-repository",
+    "cloudflare",
+    "kv",
     "contract-testing",
     "consumer-contracts",
     "pacts"
