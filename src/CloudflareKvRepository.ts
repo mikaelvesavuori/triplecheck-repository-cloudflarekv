@@ -2,12 +2,16 @@ declare var TRIPLECHECK: any;
 
 import { Repository, List } from 'triplecheck-core';
 
+export function createCloudflareKvRepository() {
+  return new CloudflareKvRepository();
+}
+
 /**
  * @description The CloudflareKvRepository allows us to run basic database operations on Cloudflare KV.
  * The business logic itself is encapsulated in the TripleCheck broker.
  * Notice how we are using `TRIPLECHECK` as the namespace.
  */
-export class CloudflareKvRepository implements Repository {
+class CloudflareKvRepository implements Repository {
   /**
    * @description Get data for the provided key.
    */

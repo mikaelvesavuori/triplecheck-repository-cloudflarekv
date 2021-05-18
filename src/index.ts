@@ -1,2 +1,2 @@
-import { CloudflareKvRepository } from './CloudflareKvRepository';
-export { CloudflareKvRepository };
+import { createCloudflareKvRepository } from './CloudflareKvRepository';
+export { createCloudflareKvRepository as CloudflareKvRepository };
