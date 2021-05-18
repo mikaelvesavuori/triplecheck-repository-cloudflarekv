@@ -1,12 +1,12 @@
-import { CloudflareKvRepository } from '../src/CloudflareKvRepository';
+import { CloudflareKvRepository } from '../src/index';
 
 import { tests } from '../__testdata__/tests';
 
 jest.mock('../src/CloudflareKvRepository');
 
-describe('Success cases', () => {
-  const kv = new CloudflareKvRepository();
+const kv = new CloudflareKvRepository();
 
+describe('Success cases', () => {
   test('It should get data', async () => {
     const data = await kv.getData('something');
     expect(data).toMatchObject({ something: 123 });
