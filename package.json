@@ -1,6 +1,6 @@
 {
   "name": "triplecheck-repository-cloudflarekv",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Database utility for using Cloudflare KV with TripleCheck broker.",
   "main": "build/index.js",
   "keywords": [
@@ -24,6 +24,9 @@
     "prepare": "husky install",
     "docs": "npx typedoc src"
   },
+  "dependencies": {
+    "triplecheck-core": "latest"
+  },
   "devDependencies": {
     "@cloudflare/workers-types": "^2.2.1",
     "@types/jest": "^26.0.22",
@@ -41,8 +44,5 @@
     "tslib": "^2.2.0",
     "typedoc": "^0.20.36",
     "typescript": "^4.2.4"
-  },
-  "dependencies": {
-    "triplecheck-core": "^0.0.1"
   }
 }
